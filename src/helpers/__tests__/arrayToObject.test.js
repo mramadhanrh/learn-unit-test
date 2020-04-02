@@ -12,4 +12,8 @@ describe("arrayToObject", () => {
       c: "c"
     });
   });
+
+  it("return empty object when params is not array", () => {
+    expect(arrayToObject("example of value")).toEqual({});
+  });
 });
